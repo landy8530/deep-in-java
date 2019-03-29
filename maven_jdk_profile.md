@@ -1,3 +1,18 @@
+
+* [Idea基于Maven配置多JDK版本](#idea基于maven配置多jdk版本)
+  * [1. 配置settings.xml](#1-配置settingsxml)
+  * [2. 配置pom.xml](#2-配置pomxml)
+  * [3. 配置project structure](#3-配置project-structure)
+    * [3.1 配置SDK](#31-配置sdk)
+    * [3.2 检查Modules相应SDK配置](#32-检查modules相应sdk配置)
+  * [4. 配置Maven插件](#4-配置maven插件)
+    * [4.1 Maven基本配置](#41-maven基本配置)
+    * [4.2 配置Maven运行的JDK](#42-配置maven运行的jdk)
+  * [5. 配置编译JDK](#5-配置编译jdk)
+  * [6. 编译打包](#6-编译打包)
+    * [6.1 使用Maven插件](#61-使用maven插件)
+    * [6.2 使用命令](#62-使用命令)
+
 # Idea基于Maven配置多JDK版本
 
 如果在本地开发环境中安装了多个JDK版本的话，需要在idea中自由切换，就需要利用Maven进行配置，配置后就可以非常方便的进行版本切换。配置步骤如下：

@@ -123,6 +123,10 @@
 
 ![Sdk_language_level](https://github.com/landy8530/deep-in-java/raw/master/00DOC/Sdk_language_level.png)
 
+注意：经过本人现场测试，发现idea 2018.03版本的情况，他只能自动刷新的language level是JDK1.8+的版本。操作方法：点击Maven插件中的reimport，如下所示，
+
+![Maven_Profiles](https://github.com/landy8530/deep-in-java/raw/master/00DOC/Maven_Profiles.png)
+
 ## 4. 配置Maven插件
 
 ### 4.1 Maven基本配置

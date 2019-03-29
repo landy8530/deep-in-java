@@ -107,7 +107,7 @@
 
 以上配置详情可以参看本例项目配置。配置完成刷新一下Maven插件（reimport），即可展示上面所配置的profile列表。如下所示：
 
-![1553786148702](C:\Users\Landy\AppData\Roaming\Typora\typora-user-images\1553786148702.png)
+![Maven_Profiles](https://github.com/landy8530/deep-in-java/raw/master/00DOC/Maven_Profiles.png)
 
 ## 3. 配置project structure
 
@@ -115,13 +115,13 @@
 
 打开idea中的project structure，配置相应的project sdk和project language level，配置如下（本案例采用JDK11），
 
-![1553785535904](C:\Users\Landy\AppData\Roaming\Typora\typora-user-images\1553785535904.png)
+![Idea_project_structure](https://github.com/landy8530/deep-in-java/raw/master/00DOC/Idea_project_structure.png)
 
 ### 3.2 检查Modules相应SDK配置
 
 在Modules中有可能会没能自动刷新相应的sdk language level配置，这时候就需要手动设置。
 
-![1553786060894](C:\Users\Landy\AppData\Roaming\Typora\typora-user-images\1553786060894.png)
+![Sdk_language_level](https://github.com/landy8530/deep-in-java/raw/master/00DOC/Sdk_language_level.png)
 
 ## 4. 配置Maven插件
 
@@ -129,13 +129,13 @@
 
 在Idea中需要配置一下Maven settings.xml文件和Maven本地仓库的位置，如果有本地安装的Maven也可以进行配置（没有则使用idea默认自带的Maven）。file --> settings --> maven 如下所示：
 
-![1553786375477](C:\Users\Landy\AppData\Roaming\Typora\typora-user-images\1553786375477.png)
+![Maven_settings_config](https://github.com/landy8530/deep-in-java/raw/master/00DOC/Maven_settings_config.png)
 
 ### 4.2 配置Maven运行的JDK
 
 为了每次切换了Project JDK后，不需要再次进行设置可以选择Project JDK选项。如下所示，
 
-![1553786535278](C:\Users\Landy\AppData\Roaming\Typora\typora-user-images\1553786535278.png)
+![Maven_Runner_JRE](https://github.com/landy8530/deep-in-java/raw/master/00DOC/Maven_Runner_JRE.png)
 
 ## 5. 配置编译JDK
 
@@ -149,7 +149,7 @@ Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.7.0:comp
 
 要是你在intellij idea里面的maven窗口点击的打包编译的话，就在intellij idea设置项目jdk版本，直接Ctrl+Alt+s进入设置界面。
 
-![1553786897633](C:\Users\Landy\AppData\Roaming\Typora\typora-user-images\1553786897633.png)
+![Java_compiler_config](https://github.com/landy8530/deep-in-java/raw/master/00DOC/Java_compiler_config.png)
 
 ## 6. 编译打包
 
@@ -159,7 +159,7 @@ Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.7.0:comp
 
 如果使用idea，则可以直接使用maven插件进行打包操作。如下图所示，
 
-![1553787154195](C:\Users\Landy\AppData\Roaming\Typora\typora-user-images\1553787154195.png)
+![Maven_compile_package](https://github.com/landy8530/deep-in-java/raw/master/00DOC/Maven_compile_package.png)
 
 ### 6.2 使用命令
 

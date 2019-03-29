@@ -4,19 +4,16 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
+  <parent>
+    <groupId>org.landy</groupId>
+    <artifactId>deep-in-java</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
   <groupId>org.landy</groupId>
   <artifactId>concurrency</artifactId>
   <version>1.0-SNAPSHOT</version>
-
   <name>concurrency</name>
-
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <java.version>1.8</java.version>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-  </properties>
 
   <dependencies>
     <dependency>
@@ -26,5 +23,15 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+  <build>
+    <!--然后，在子pom文件中就可以这样使用,省去了版本、配置等信息，只需指定groupId和artifactId即可。-->
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
 
 </project>
